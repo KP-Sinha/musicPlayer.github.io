@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Music Player</title>
+</head>
+<body data-theme="light">
+    <div class="player">
+        <!-- Theme Toggle Button -->
+        <div class="theme-toggle">
+            <button id="toggle-theme"><i>Dark mode</i></button>
+        </div>
+
+        <!-- Music Player Title -->
+        <h2><i>My Music Player</i></h2>
+        
+        <!-- Search Songs Section -->
+        <input type="text" id="search-songs" placeholder="Search songs...">
+        
+        <!-- Genre Filter Dropdown -->
+        <select id="genre-filter">
+            <option value="all">All Genres</option>
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Classical">Classical</option>
+            <!-- Add more genres as needed -->
+        </select>
+        
+        <!-- Song Details and Player -->
+        <br><br><br>
+        <div id="song-details">
+            <audio id="audio" controls>
+                <source id="audio-source" src="" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+
+        <!-- Music Player Controls -->
+        <div class="controls">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+            <button id="add-to-playlist">Add to Playlist</button>
+        </div>
+        
+        <!-- Song List -->
+        <div id="song-list"></div>
+        
+        <!-- Playlists Section -->
+        <h3>Playlists</h3>
+        <input type="text" id="new-playlist-name" placeholder="New Playlist Name">
+        <button id="create-playlist">Create Playlist</button>
+        <input type="text" id="search-playlists" placeholder="Search playlists...">
+        <div id="playlist-list"></div>
+    </div>
+
+    <!-- Script Files -->
+    <script src="songs.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
